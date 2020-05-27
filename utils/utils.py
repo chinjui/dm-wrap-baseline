@@ -67,7 +67,7 @@ class CustomMlpPolicy(BasePolicy):
 class CustomSACPolicy(SACPolicy):
     def __init__(self, *args, **kwargs):
         super(CustomSACPolicy, self).__init__(*args, **kwargs,
-                                              layers=[256, 256],
+                                              # layers=[256, 256],
                                               feature_extraction="mlp")
 
 
